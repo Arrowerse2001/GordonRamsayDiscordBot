@@ -22,3 +22,27 @@ C:\Users\IainN\source\repos\GordonRamsayDiscordBot\GordonRamsayDiscordBot\obj\De
 C:\Users\IainN\source\repos\GordonRamsayDiscordBot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.dll
 C:\Users\IainN\source\repos\GordonRamsayDiscordBot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.pdb
 C:\Users\IainN\source\repos\GordonRamsayDiscordBot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.genruntimeconfig.cache
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\GordonRamsayDiscordBot.exe
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\GordonRamsayDiscordBot.deps.json
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\GordonRamsayDiscordBot.runtimeconfig.json
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\GordonRamsayDiscordBot.runtimeconfig.dev.json
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\GordonRamsayDiscordBot.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\GordonRamsayDiscordBot.pdb
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Discord.Net.Commands.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Discord.Net.Core.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Discord.Net.Rest.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Discord.Net.Webhook.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Discord.Net.WebSocket.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\System.Linq.Async.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.csprojAssemblyReference.cache
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.AssemblyInfoInputs.cache
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.AssemblyInfo.cs
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.csproj.CoreCompileInputs.cache
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.csproj.CopyComplete
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.pdb
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.genruntimeconfig.cache
