@@ -19,7 +19,12 @@ namespace GordonRamsayBot.Commands
 
         // Insult someone by using a Gordon Ramsay Quote
         [Command("insult")]
-        public async Task GordonInsult(SocketGuildUser user = null) => await Context.Channel.SendMessageAsync($"{ArrayHandler.Insults[Utilities.GetRandomNumber(0, ArrayHandler.Insults.Length)]}");
+        public async Task GordonInsult(SocketGuildUser user = null)
+        {
+            if (user == null)
+                user = (SocketGuildUser)Context.User;
+           await Context.Channel.SendMessageAsync($"{user.Mention} {ArrayHandler.Insults[Utilities.GetRandomNumber(0, ArrayHandler.Insults.Length)]}");
+        }
 
         // Prints an image or gif of Gordon
         [Command("image")]
