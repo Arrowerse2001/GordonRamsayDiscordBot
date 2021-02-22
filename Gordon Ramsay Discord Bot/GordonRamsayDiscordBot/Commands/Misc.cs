@@ -75,11 +75,22 @@ namespace GordonRamsayBot.Commands
                 .AddField("!bio", "Displays Gordon's Bio")
                 .AddField("!insult @user", "Use a famous line to insult someone!")
                 .AddField("!image", "Displays a random image of Gordon")
+                .AddField("!github", "Get a link to the bot github page")
                 .AddField("!trivia", "Shows trivia menu")
                 .AddField("!trivia solo", "Play trivia solo")
-                .AddField("!trivia all", "First to answer wins");
+                .AddField("!trivia all", "First to answer wins")
+                .AddField("!stats", "Display Bot Stats");
             builder.Build();
             await ReplyAsync("", false, builder.Build());
         }
+
+        // GitHub
+        [Command("github")]
+        public async Task ShowGithub() => await Context.Channel.SendMessageAsync("https://github.com/Arrowerse2001/GordonRamsayDiscordBot");
+
+        // My stats to see how many servers my bot is in
+        [Command("stats")]
+        public async Task GetServers() => await Utilities.DisplayBotStats(Context.Channel, Context.Client);
+        
     }
 }

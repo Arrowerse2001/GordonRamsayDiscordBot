@@ -19,7 +19,9 @@ namespace GordonRamsayBot
             if (!File.Exists("Resources/config.json"))
                 File.WriteAllText("Resources/config.json", JsonConvert.SerializeObject(bot, Formatting.Indented));
             else
+            {
                 bot = JsonConvert.DeserializeObject<BotConfig>(File.ReadAllText("Resources/config.json"));
+            }
         }
     }
 
