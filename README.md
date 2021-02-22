@@ -26,3 +26,8 @@ This is a discord bot based on the famous TV chef: Gordon Ramsay. The bot has a 
 # Bugs & Support
 [Support Server!](https://discord.gg/X7na2Sx)  
 [Bugs](https://github.com/Arrowerse2001/GordonRamsayDiscordBot/issues)
+
+# Things To Add
+1. Change from arrays to a text file and have add/remove commands for Images/Insults/ and come up with more trivia questions.
+2. Maybe add the time
+3. Custom prefixes for each server with ``gr!`` still being the main one.
