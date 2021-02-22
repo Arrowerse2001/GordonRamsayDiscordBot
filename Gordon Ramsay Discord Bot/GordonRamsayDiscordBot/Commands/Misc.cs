@@ -30,7 +30,13 @@ namespace GordonRamsayBot.Commands
         {
             int imageNum = Utilities.GetRandomNumber(0, GordonRamsayDiscordBot.Handlers.ImageHander.images.Count);
             var image = GordonRamsayDiscordBot.Handlers.ImageHander.GetGordonImage(imageNum);
-            await Utilities.SendDomColorEmbed(Context.Channel, "", image, image, "");
+            var col = Utilities.DomColorFromURL(image);
+
+            EmbedBuilder b = new EmbedBuilder();
+            b.WithImageUrl(image)
+                .WithColor(col);
+            b.Build();
+            await ReplyAsync("", false, b.Build());
         }
 
         // trivia

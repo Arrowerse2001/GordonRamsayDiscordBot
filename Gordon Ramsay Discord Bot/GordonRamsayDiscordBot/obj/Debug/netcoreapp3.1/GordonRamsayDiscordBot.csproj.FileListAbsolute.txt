@@ -76,3 +76,4 @@ C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord
 C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.csproj.ResolveComReference.cache

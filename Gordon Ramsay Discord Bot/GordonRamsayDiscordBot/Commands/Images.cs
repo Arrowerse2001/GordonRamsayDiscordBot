@@ -36,7 +36,7 @@ namespace GordonRamsayDiscordBot.Commands
                 // Reload
                 ImageHander.ReloadImages();
                 ImageHander.ReloadImagesMasterList();
-                await GordonRamsayBot.Utilities.SendDomColorEmbed((ISocketMessageChannel)Context.Channel, "Image Added", imageLink, imageLink, "");
+                await Context.Channel.SendMessageAsync($"Image added");
             }
         }
 
