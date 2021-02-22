@@ -2,7 +2,6 @@
 using Discord;
 using Discord.WebSocket;
 using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace GordonRamsayBot
 {

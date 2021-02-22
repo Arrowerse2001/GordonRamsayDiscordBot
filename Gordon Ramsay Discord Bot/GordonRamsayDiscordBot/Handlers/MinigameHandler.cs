@@ -1,5 +1,4 @@
-﻿using System;
-using GordonRamsayBot.Minigames;
+﻿using GordonRamsayBot.Minigames;
 using Discord.Commands;
 using Discord.WebSocket;
 using System.Threading.Tasks;

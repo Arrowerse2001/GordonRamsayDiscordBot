@@ -3,11 +3,10 @@ using Discord;
 using System.IO;
 using System.Net;
 using System.Drawing;
-using Discord.Commands;
 using Discord.WebSocket;
 using System.Threading.Tasks;
-using System.Drawing;
 using ColorThiefDotNet;
+
 namespace GordonRamsayBot
 {
     static class Utilities

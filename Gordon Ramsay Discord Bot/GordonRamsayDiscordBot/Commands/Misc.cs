@@ -1,11 +1,7 @@
-﻿using System;
-using Discord;
-using System.Linq;
+﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using System.Net.Http;
 using System.Threading.Tasks;
-using System.Text.RegularExpressions;
 
 namespace GordonRamsayBot.Commands
 {

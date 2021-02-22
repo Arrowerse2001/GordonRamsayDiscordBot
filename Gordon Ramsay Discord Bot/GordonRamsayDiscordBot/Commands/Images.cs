@@ -1,12 +1,9 @@
 ﻿using Discord;
 using Discord.Commands;
 using GordonRamsayDiscordBot.Handlers;
-using System;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 using Discord.WebSocket;
-using System.Collections.Generic;
 
 namespace GordonRamsayDiscordBot.Commands
 {
