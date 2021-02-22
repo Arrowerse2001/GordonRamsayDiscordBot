@@ -1,4 +1,4 @@
-# GordonRamsayDiscordBot [![Codacy Badge](https://app.codacy.com/project/badge/Grade/32298563e6cb46ae95461d059061a221)](https://www.codacy.com/gh/Arrowerse2001/GordonRamsayDiscordBot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Arrowerse2001/GordonRamsayDiscordBot&amp;utm_campaign=Badge_Grade)
+# GordonRamsayDiscordBot [![Codacy Badge](https://app.codacy.com/project/badge/Grade/32298563e6cb46ae95461d059061a221)](https://www.codacy.com/gh/Arrowerse2001/GordonRamsayDiscordBot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Arrowerse2001/GordonRamsayDiscordBot&amp;utm_campaign=Badge_Grade) [![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/X7na2Sx)
 
 ![Image of Gordon](https://i.pinimg.com/564x/bc/96/a2/bc96a2c878fe6ec50e66749b115ae7fb.jpg)
 
