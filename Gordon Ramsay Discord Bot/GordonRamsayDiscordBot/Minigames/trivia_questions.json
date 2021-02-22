@@ -1,0 +1,67 @@
+﻿{
+  "Questions": [
+    {
+      "Question": "Gordon is hosting which game show on BBC One?",
+      "Answer": "Bank Balance",
+      "IncorrectAnswers": [
+        "Pointless",
+        "The Chase",
+        "The Wall"
+      ]
+    },
+    {
+        "Question": "Finish the quote: Sounds like the weirdo on....",
+        "Answer": "Dr. Phil",
+        "IncorrectAnswers": [
+            "Jeremey Kyle",
+            "Jerry Springer",
+            "Judge Judy"
+        ]
+    },
+    {
+        "Question": "How old is Gordon",
+        "Answer": "54",
+        "IncorrectAnswers": [
+            "55",
+            "56",
+            "57"
+        ]
+    },
+    {
+        "Question": "Where was Gordon born",
+        "Answer": "Glasgow, Scotland",
+        "IncorrectAnswers": [
+            "London, England",
+            "Bristol, England",
+            "Edinburgh, Scotland"
+        ]
+    },
+    {
+        "Question": "Before cooking, what career did Gordon want to have",
+        "Answer": "Footballer",
+        "IncorrectAnswers": [
+            "Scientist",
+            "Policeman",
+            "Firefighter"
+        ]
+    },
+    {
+        "Question": "What year did he found his first restaurant",
+        "Answer": "1977",
+        "IncorrectAnswers": [
+            "1976",
+            "1987",
+            "1986"
+        ]
+    },
+    {
+        "Question": "What other chef, once made Gordon cry",
+        "Answer": "Marco Pierre White",
+        "IncorrectAnswers": [
+            "James Martin",
+            "Jamie Oliver",
+            "Ainsley Hartlet"
+        ]
+    }
+   ]
+}

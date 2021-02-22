@@ -32,7 +32,7 @@ namespace GordonRamsayBot.Minigames
             }
             if (input == "trivia")
             {
-                await context.Channel.SendMessageAsync("", false, Embed("Please select a mode.\n\n`!trivia solo` - Play alone.\n\n`!trivia all` - First to answer wins.", ""));
+                await context.Channel.SendMessageAsync("", false, Embed("Please select a mode.\n\n`gr!trivia solo` - Play alone.\n\n`gr!trivia all` - First to answer wins.", ""));
                 return;
             }
             if (isTriviaBeingPlayed && (DateTime.Now - StartTime).TotalSeconds > 5)

@@ -47,8 +47,10 @@ namespace GordonRamsayBot.Handlers
             var context = new SocketCommandContext(_client, msg);
 
             int argPos = 0;
-            if (msg.HasStringPrefix("!", ref argPos))
+            if (msg.HasStringPrefix(".", ref argPos))
                 await _service.ExecuteAsync(context, argPos, serviceProdiver, MultiMatchHandling.Exception);
+          // if (msg.HasStringPrefix("", ref argPos))
+           //     await _service.ExecuteAsync(context, argPos, serviceProdiver, MultiMatchHandling.Exception);
 
             string m = msg.Content.ToLower();
 

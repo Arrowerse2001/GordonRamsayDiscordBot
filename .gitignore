@@ -8,4 +8,5 @@ tmp/nanoc/
 
 # Crash Log
 crash.log
-*.json
+# exclude everything
+C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Resources/*

@@ -23,7 +23,9 @@ namespace GordonRamsayBot.Commands
         {
             if (user == null)
                 user = (SocketGuildUser)Context.User;
-            await Context.Channel.SendMessageAsync($"{user.Mention} {ArrayHandler.Insults[Utilities.GetRandomNumber(0, ArrayHandler.Insults.Length)]}");
+            int iN = Utilities.GetRandomNumber(0, ArrayHandler.gInsults.Count);
+            var insult = ArrayHandler.GetInsult(iN);
+            await Context.Channel.SendMessageAsync($"{user.Mention} {insult}");
         }
 
         // Prints an image or gif of Gordon
@@ -71,15 +73,15 @@ namespace GordonRamsayBot.Commands
             EmbedBuilder builder = new EmbedBuilder();
             builder.WithTitle("Help!")
                 .WithColor(Colours.Blue)
-                .AddField("!suggest", "Submit something you want in the bot")
-                .AddField("!bio", "Displays Gordon's Bio")
-                .AddField("!insult @user", "Use a famous line to insult someone!")
-                .AddField("!image", "Displays a random image of Gordon")
-                .AddField("!github", "Get a link to the bot github page")
-                .AddField("!trivia", "Shows trivia menu")
-                .AddField("!trivia solo", "Play trivia solo")
-                .AddField("!trivia all", "First to answer wins")
-                .AddField("!stats", "Display Bot Stats");
+                .AddField("gr!suggest", "Submit something you want in the bot")
+                .AddField("gr!bio", "Displays Gordon's Bio")
+                .AddField("gr!insult @user", "Use a famous line to insult someone!")
+                .AddField("gr!image", "Displays a random image of Gordon")
+                .AddField("gr!github", "Get a link to the bot github page")
+                .AddField("gr!trivia", "Shows trivia menu")
+                .AddField("gr!trivia solo", "Play trivia solo")
+                .AddField("gr!trivia all", "First to answer wins")
+                .AddField("gr!stats", "Display Bot Stats");
             builder.Build();
             await ReplyAsync("", false, builder.Build());
         }
@@ -91,6 +93,10 @@ namespace GordonRamsayBot.Commands
         // My stats to see how many servers my bot is in
         [Command("stats")]
         public async Task GetServers() => await Utilities.DisplayBotStats(Context.Channel, Context.Client);
+
+        // Reset trivia
+        [Command("reset trivia")]
+        public async Task ResetTrivia() => await GordonRamsayBot.Handlers.MinigameHandler.ResetGame(Context, "trivia");
         
     }
 }

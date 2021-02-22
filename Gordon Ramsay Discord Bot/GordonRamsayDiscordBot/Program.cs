@@ -21,7 +21,7 @@ namespace GordonRamsayBot
             await _client.LoginAsync(TokenType.Bot, Config.bot.DiscordBotToken);
             await _client.StartAsync();
             // displays a activity
-            await _client.SetGameAsync("Hell's Kitchen", null, ActivityType.Watching);
+            await _client.SetGameAsync("Bank Balance", null, ActivityType.Watching);
 
 
             var _handler = new Handlers.EventHandler(_services);
