@@ -22,7 +22,7 @@ namespace GordonRamsayBot.Commands
                 await Context.Channel.SendMessageAsync("Only the bot developer can do that. Use ``gr!suggest``");
             } else
             {
-                // Add new topic to list!
+                // Add new insult to list!
                 using (System.IO.StreamWriter file =
                     new System.IO.StreamWriter(@"MasterList.txt", true))
                 {

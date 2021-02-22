@@ -32,8 +32,9 @@ namespace GordonRamsayBot.Commands
         [Command("image")]
         public async Task SendGordonImage()
         {
-            string image = ArrayHandler.GordonImages[Utilities.GetRandomNumber(0, ArrayHandler.GordonImages.Length)];
-            await Context.Channel.SendMessageAsync("", false, Utilities.ImageEmbed("", "", Colours.Blue, "", image));
+            int imageNum = Utilities.GetRandomNumber(0, GordonRamsayDiscordBot.Handlers.ImageHander.images.Count);
+            var image = GordonRamsayDiscordBot.Handlers.ImageHander.GetGordonImage(imageNum);
+            await Utilities.SendDomColorEmbed(Context.Channel, "", image, image, "");
         }
 
         // trivia
