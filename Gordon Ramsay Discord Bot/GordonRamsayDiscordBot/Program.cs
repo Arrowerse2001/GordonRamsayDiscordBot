@@ -18,6 +18,7 @@ namespace GordonRamsayBot
             if (Config.bot.DiscordBotToken == "" || Config.bot.DiscordBotToken == null) return;
             _client = new DiscordSocketClient(new DiscordSocketConfig { LogLevel = LogSeverity.Verbose });
             _client.Log += Log;
+            Console.WriteLine($"{Config.bot.DiscordBotToken.ToString()}");
             await _client.LoginAsync(TokenType.Bot, Config.bot.DiscordBotToken);
             await _client.StartAsync();
             // displays a activity
