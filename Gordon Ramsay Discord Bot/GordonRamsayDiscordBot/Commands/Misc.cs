@@ -94,6 +94,8 @@ namespace GordonRamsayBot.Commands
         // Reset trivia
         [Command("reset trivia")]
         public async Task ResetTrivia() => await GordonRamsayBot.Handlers.MinigameHandler.ResetGame(Context, "trivia");
+
+     
         
     }
 }

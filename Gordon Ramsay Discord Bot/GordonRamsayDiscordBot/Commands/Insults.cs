@@ -22,6 +22,7 @@ namespace GordonRamsayBot.Commands
                     new System.IO.StreamWriter(@"MasterList.txt", true))
                 {
                     file.Write($"\n{insult}");
+                    
                 }
 
                 // Add to in progress

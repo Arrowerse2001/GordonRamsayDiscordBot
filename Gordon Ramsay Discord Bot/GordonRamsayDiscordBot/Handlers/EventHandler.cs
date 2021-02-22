@@ -41,7 +41,7 @@ namespace GordonRamsayBot.Handlers
         private async Task HandleCommandAsync(SocketMessage s)
         {
             SocketUserMessage msg = s as SocketUserMessage;
-            if (msg == null || msg.Author.IsBot) return;
+            //if (msg == null || msg.Author.IsBot) return;          Commented out as i want to read and reply to a bot message
 
             var context = new SocketCommandContext(_client, msg);
 
@@ -61,6 +61,11 @@ namespace GordonRamsayBot.Handlers
 
             if (m == "a" || m == "b" || m == "c" || m == "d")
                 await MinigameHandler.Trivia.AnswerTrivia((SocketGuildUser)msg.Author, context, m);
+
+            if (msg.Content == "Here it is, chef" && msg.Author.Id == 813313825511702558)
+            {
+                await context.Channel.SendMessageAsync("Finally, I have found it!");
+            }
         }
     }
 }
