@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3BNIydciLoXRIvkkh9BgezcTwtkJcm+cyY7nfhJ89XalhmA6qiTMrHqschA2yxnAa1zLh1SqBxbw69EOk7QIRw==",
+  "dgSpecHash": "2aEpcNCWNCCAqqW61j8zKoQX6q4+SzrtnawmHJ0RtkfDaCaLXGnvoeHPSQ/mcrMMaoPNJUKb0KKX3N8QwotBOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IainN\\OneDrive\\Desktop\\Bot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
+  "projectFilePath": "C:\\Users\\IainN\\OneDrive\\Desktop\\GordonBot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IainN\\.nuget\\packages\\discord.net\\2.3.0\\discord.net.2.3.0.nupkg.sha512",
     "C:\\Users\\IainN\\.nuget\\packages\\discord.net.commands\\2.3.0\\discord.net.commands.2.3.0.nupkg.sha512",

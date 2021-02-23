@@ -1,6 +1,10 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using System;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace GordonRamsayBot.Commands
@@ -84,6 +88,7 @@ namespace GordonRamsayBot.Commands
                 .AddField("gr!trivia", "Shows trivia menu")
                 .AddField("gr!trivia solo", "Play trivia solo")
                 .AddField("gr!trivia all", "First to answer wins")
+                .AddField("gr!serverstats", "Show server stats")
                 .AddField("gr!stats", "Display Bot Stats");
             builder.Build();
             await ReplyAsync("", false, builder.Build());
@@ -101,7 +106,74 @@ namespace GordonRamsayBot.Commands
         [Command("reset trivia")]
         public async Task ResetTrivia() => await GordonRamsayBot.Handlers.MinigameHandler.ResetGame(Context, "trivia");
 
-     
+        // Server Stats
+        [Command("serverstats")]
+        [Alias("server stats", "serverinfo", "server info")]
+        public async Task DisplaySeverStats()
+        {
+            EmbedBuilder builder = new EmbedBuilder();
+            builder.WithTitle(Context.Guild.Name);
+            builder.AddField("Created", Context.Guild.CreatedAt.ToString("dddd, MMMM d, yyyy"));
+            builder.AddField("Owner", Context.Guild.Owner.Mention);
+            builder.AddField("Emotes", Context.Guild.Emotes.Count);
+            builder.AddField("Members", Context.Guild.MemberCount.ToString("#,##0"));
+            builder.WithThumbnailUrl(Context.Guild.IconUrl);
+            builder.WithColor(Colours.Blue);
+            builder.Build();
+            await ReplyAsync("", false, builder.Build());
+        }
         
+        // Get user avatar
+        [Command("avatar")]
+        [Alias("av", "avi")]
+        public async Task GetUserAvatar(SocketGuildUser user = null)
+        {
+            if (user == null)
+                user = (SocketGuildUser)Context.User;
+            await Context.Channel.SendMessageAsync("", false, Utilities.ImageEmbed($"{user.Nickname ?? user.Username}'s Avatar", "", Colours.Blue, "", user.GetAvatarUrl()));
+        }
+
+        // Find People with the desired role
+        private string GetMembersWithRole(string DesiredRole)
+        {
+            SocketRole role = Context.Guild.Roles.FirstOrDefault(x => x.Name == DesiredRole);
+            StringBuilder d = new StringBuilder();
+            foreach (SocketGuildUser user in Context.Guild.Users.ToArray())
+            {
+                if (user.Roles.Contains(role))
+                    d.AppendLine($"{user.Mention}");
+            }
+            return d.ToString();
+        }
+
+        // Command to see who has the role (role is case sensitive)
+        [Command("members")]
+        public async Task FindPeopleInRoles([Remainder]string role) => await Utilities.SendEmbed(Context.Channel, $"Members", GetMembersWithRole(role), Colours.Blue, "", "");
+
+        // Say in any channel within that server
+        [Command("say")]
+        [RequireOwner]
+        public async Task Say(ISocketMessageChannel channel,[Remainder]string msg)
+        {
+            var client = Context.Client;
+            ulong channelID = channel.Id; // get the channel id
+            var c = client.GetChannel(channelID) as SocketTextChannel;
+            await c.SendMessageAsync($"{msg}");
+            await Context.Channel.SendMessageAsync("Posted");
+        }
+
+        // Reply to a message
+        [Command("reply")]
+        [RequireOwner]
+        public async Task ReplyToMessage(ulong msg, ISocketMessageChannel channel, [Remainder]string words)
+        {
+            var client = Context.Client;
+            ulong channelID = channel.Id;
+            var c = client.GetChannel(channelID) as SocketTextChannel;
+
+            MessageReference m = new MessageReference(msg);
+
+            await c.SendMessageAsync(words, false, null, null, null, m);
+        }
     }
 }
