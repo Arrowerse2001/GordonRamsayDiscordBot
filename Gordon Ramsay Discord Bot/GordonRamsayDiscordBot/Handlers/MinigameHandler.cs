@@ -20,7 +20,7 @@ namespace GordonRamsayBot.Handlers
         // Set up Trivia Questions
         public static void InitialTriviaSetup()
         {
-          TriviaQuestions = JsonConvert.DeserializeObject<TriviaQuestions>(System.IO.File.ReadAllText(@"C:\Users\IainN\OneDrive\Desktop\Bot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\Minigames\trivia_questions.json"));
+          TriviaQuestions = JsonConvert.DeserializeObject<TriviaQuestions>(System.IO.File.ReadAllText(@"..\..\..\Minigames\trivia_questions.json"));
          //   TriviaQuestions = JsonConvert.DeserializeObject<TriviaQuestions>(System.IO.File.ReadAllText(@"C:\Users\Administrator\Desktop\GordonRamsayDiscordBot\Minigames\trivia_questions.json"));
         }
 

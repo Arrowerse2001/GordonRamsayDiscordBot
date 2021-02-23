@@ -2,6 +2,7 @@
 using Discord.Commands;
 using Discord.WebSocket;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -150,30 +151,144 @@ namespace GordonRamsayBot.Commands
         [Command("members")]
         public async Task FindPeopleInRoles([Remainder]string role) => await Utilities.SendEmbed(Context.Channel, $"Members", GetMembersWithRole(role), Colours.Blue, "", "");
 
-        // Say in any channel within that server
-        [Command("say")]
-        [RequireOwner]
-        public async Task Say(ISocketMessageChannel channel,[Remainder]string msg)
-        {
-            var client = Context.Client;
-            ulong channelID = channel.Id; // get the channel id
-            var c = client.GetChannel(channelID) as SocketTextChannel;
-            await c.SendMessageAsync($"{msg}");
-            await Context.Channel.SendMessageAsync("Posted");
-        }
-
         // Reply to a message
         [Command("reply")]
         [RequireOwner]
-        public async Task ReplyToMessage(ulong msg, ISocketMessageChannel channel, [Remainder]string words)
+        public async Task Reply(ISocketMessageChannel channel, ulong msg, [Remainder] string reply)
         {
             var client = Context.Client;
-            ulong channelID = channel.Id;
+            ulong channelID = channel.Id; // bot channel
             var c = client.GetChannel(channelID) as SocketTextChannel;
 
             MessageReference m = new MessageReference(msg);
 
-            await c.SendMessageAsync(words, false, null, null, null, m);
+            await c.SendMessageAsync(reply, false, null, null, null, m);
+        }
+
+        // Display server stats
+        [Command("severstats")]
+        [Alias("server stats", "serverinfo", "server info")]
+        public async Task DisplayServerStats()
+        {
+            EmbedBuilder builder = new EmbedBuilder();
+            builder.WithTitle($"{Context.Guild.Name}'s Server Stats")
+                .WithThumbnailUrl(Context.Guild.IconUrl)
+                .WithColor(Colours.Blue)
+                .AddField("Created", Context.Guild.CreatedAt.ToString("dddd, MMMM d, yyyy"))
+                .AddField("Owner: ", $"{Context.Guild.Owner.Mention}")
+                .AddField("Emotes: ", $"{Context.Guild.Emotes.Count}")
+                .AddField("Members: ", $"{Context.Guild.MemberCount}");
+            builder.Build();
+            await ReplyAsync("", false, builder.Build());
+        }
+
+        // Say something to a specific channel
+        [Command("say")]
+        [RequireOwner]
+        public async Task SaySomething(ISocketMessageChannel channel, [Remainder] string msg)
+        {
+            var client = Context.Client;
+            ulong channelID = channel.Id;
+            var c = client.GetChannel(channelID) as SocketTextChannel;
+            await c.SendMessageAsync($"{msg}");
+            await Context.Channel.SendMessageAsync($"Posted");
+        }
+
+        // Mod Commands
+        // Ban
+        [Command("ban")]
+        public async Task Ban(SocketGuildUser user, [Remainder] string reason = null)
+        {
+            var contextUser = (SocketGuildUser)Context.User;
+            if (contextUser.GuildPermissions.BanMembers == false)
+            {
+                await Context.Channel.SendMessageAsync($"You don't have that permission you fucking doughnut!");
+            }
+            else if (reason == null)
+            {
+                await Context.Channel.SendMessageAsync($"You need to provide a reason.");
+            }
+            else if (contextUser.GuildPermissions.BanMembers == true)
+            {
+                foreach (var channel in Context.Guild.Channels)
+                {
+                    if (channel.Name == "logs" || channel.Name == "log")
+                    {
+                        var client = Context.Client;
+                        ulong channelID = channel.Id;
+                        var c = client.GetChannel(channelID) as SocketTextChannel;
+
+                        EmbedBuilder builder = new EmbedBuilder();
+                        builder.WithTitle("Member Banned")
+                            .WithThumbnailUrl(user.GetAvatarUrl())
+                            .WithColor(Colours.Red)
+                            .AddField("User Banned: ", $"{user}")
+                            .AddField("By: ", $"{Context.User.Mention}")
+                            .AddField("Reason: ", $"{reason}");
+                        builder.Build();
+                        await c.SendMessageAsync("", false, builder.Build());
+                        break;
+                    }
+                }
+                await user.SendMessageAsync($"You have been banned!\nServer: {Context.Guild.Name}\nBy: {Context.User}\nReason: {reason}");
+                await Context.Guild.AddBanAsync(user, 0, reason, null);
+                await Context.Channel.SendMessageAsync($"{user} has been banned by {Context.User.Mention} for {reason}.");
+            }
+        }
+
+        // Kick
+        [Command("kick")]
+        public async Task KickMembers(SocketGuildUser user, [Remainder] string reason)
+        {
+            var contextUser = (SocketGuildUser)Context.User;
+            if (contextUser.GuildPermissions.KickMembers == false)
+            {
+                await Context.Channel.SendMessageAsync($"You don't have permission to do that you fucking idiot!");
+            }
+            else if (contextUser.GuildPermissions.KickMembers == true)
+            {
+                await user.KickAsync(reason);
+                await Context.Channel.SendMessageAsync($"{user} has been kicked by {Context.User} for {reason}");
+            }
+        }
+
+        // Purge
+        [Command("delete")]
+        [Alias("purge", "clean", "clear", "remove")]
+        public async Task PurgeMessages(int amount)
+        {
+            var contextUser = (SocketGuildUser)Context.User;
+
+            if (contextUser.GuildPermissions.ManageMessages == false)
+            {
+                await Context.Channel.SendMessageAsync($"{Context.User.Mention} You fucking idiot, you do not have that permission!");
+                await Context.Channel.SendMessageAsync($"<a:GordonPathetic:811434817404272700>");
+            }
+            else if (contextUser.GuildPermissions.ManageChannels == true)
+            {
+                IEnumerable<IMessage> messages = await Context.Channel.GetMessagesAsync(amount + 1).FlattenAsync();
+                await ((ITextChannel)Context.Channel).DeleteMessagesAsync(messages);
+                IUserMessage m = await ReplyAsync($"Deleted {amount} message for you.");
+                await Task.Delay(3000);
+                await m.DeleteAsync();
+            }
+        }
+
+        // Create Member Count Voice Channel
+        [Command("create channel")]
+        public async Task CreateChannel()
+        {
+            var contextUser = (SocketGuildUser)Context.User;
+
+            if (contextUser.GuildPermissions.ManageChannels == false)
+            {
+                await Context.Channel.SendMessageAsync($"What an idiot. Trying to create a channel for a server he doesn't have any perms in.");
+                await Context.Channel.SendMessageAsync($"<a:GordonPathetic:811434817404272700>");
+            }
+            else if (contextUser.GuildPermissions.ManageChannels == true)
+            {
+                await Context.Guild.CreateVoiceChannelAsync($"Members: {Context.Guild.MemberCount}");
+            }
         }
     }
 }
