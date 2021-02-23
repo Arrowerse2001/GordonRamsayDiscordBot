@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IainN\\OneDrive\\Desktop\\Bot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj": {}
+    "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IainN\\OneDrive\\Desktop\\Bot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj": {
+    "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IainN\\OneDrive\\Desktop\\Bot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
+        "projectUniqueName": "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
         "projectName": "GordonRamsayDiscordBot",
-        "projectPath": "C:\\Users\\IainN\\OneDrive\\Desktop\\Bot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
+        "projectPath": "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
         "packagesPath": "C:\\Users\\IainN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IainN\\OneDrive\\Desktop\\Bot\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\obj\\publish\\win-x86\\",
+        "outputPath": "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IainN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,14 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "ksemenenko.ColorThief": {
+              "target": "Package",
+              "version": "[1.1.1.4, )"
             }
           },
           "imports": [
@@ -62,15 +70,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-              "version": "[3.1.9, 3.1.9]"
+              "version": "[3.1.10, 3.1.10]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x86",
-              "version": "[3.1.9, 3.1.9]"
+              "version": "[3.1.10, 3.1.10]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-              "version": "[3.1.9, 3.1.9]"
+              "version": "[3.1.10, 3.1.10]"
             }
           ],
           "frameworkReferences": {
@@ -78,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

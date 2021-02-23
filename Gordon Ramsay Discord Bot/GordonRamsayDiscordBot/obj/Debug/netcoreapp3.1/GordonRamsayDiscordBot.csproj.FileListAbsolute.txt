@@ -108,3 +108,10 @@ C:\Users\IainN\OneDrive\Desktop\GordonBot\GordonRamsayDiscordBot\Gordon Ramsay D
 C:\Users\IainN\OneDrive\Desktop\GordonBot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.dll
 C:\Users\IainN\OneDrive\Desktop\GordonBot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.pdb
 C:\Users\IainN\OneDrive\Desktop\GordonBot\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.genruntimeconfig.cache
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\ColorThief.Netstandard.v20.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\obj\Debug\netcoreapp3.1\GordonRamsayDiscordBot.csproj.ResolveComReference.cache

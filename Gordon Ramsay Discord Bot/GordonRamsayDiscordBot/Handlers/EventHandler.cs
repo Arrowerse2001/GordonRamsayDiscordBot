@@ -41,7 +41,7 @@ namespace GordonRamsayBot.Handlers
         private async Task HandleCommandAsync(SocketMessage s)
         {
             SocketUserMessage msg = s as SocketUserMessage;
-            //if (msg == null || msg.Author.IsBot) return;          Commented out as i want to read and reply to a bot message
+            if (msg == null || msg.Author.IsBot) return;          //Commented out as i want to read and reply to a bot message
 
             var context = new SocketCommandContext(_client, msg);
 

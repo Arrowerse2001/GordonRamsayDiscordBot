@@ -35,11 +35,10 @@ namespace GordonRamsayBot.Commands
         {
             int imageNum = Utilities.GetRandomNumber(0, GordonRamsayDiscordBot.Handlers.ImageHander.images.Count);
             var image = GordonRamsayDiscordBot.Handlers.ImageHander.GetGordonImage(imageNum);
-            var col = Utilities.DomColorFromURL(image);
 
             EmbedBuilder b = new EmbedBuilder();
             b.WithImageUrl(image)
-                .WithColor(col);
+                .WithColor(Colours.Blue);
             b.Build();
             await ReplyAsync("", false, b.Build());
         }

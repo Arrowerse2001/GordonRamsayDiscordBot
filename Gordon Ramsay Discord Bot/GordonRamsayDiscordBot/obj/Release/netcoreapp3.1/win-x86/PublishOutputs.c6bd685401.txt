@@ -229,8 +229,11 @@ C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRa
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Discord.Net.Rest.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Discord.Net.Webhook.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Discord.Net.WebSocket.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\ColorThief.Netstandard.v20.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Microsoft.Win32.SystemEvents.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\Newtonsoft.Json.dll
+C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\System.Drawing.Common.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\System.Interactive.Async.dll
 C:\Users\IainN\Desktop\GordonRamsayDiscordBot\Gordon Ramsay Discord Bot\GordonRamsayDiscordBot\bin\Release\netcoreapp3.1\publish\System.Linq.Async.dll
