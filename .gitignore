@@ -261,3 +261,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+Gordon Ramsay Discord Bot/GordonRamsayDiscordBot/bin/Debug/netcoreapp3.1/Resources/config.json
