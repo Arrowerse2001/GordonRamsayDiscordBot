@@ -1680,11 +1680,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
+      "projectUniqueName": "D:\\BOTS\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
       "projectName": "GordonRamsayDiscordBot",
-      "projectPath": "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
+      "projectPath": "D:\\BOTS\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\GordonRamsayDiscordBot.csproj",
       "packagesPath": "C:\\Users\\IainN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IainN\\Desktop\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\obj\\",
+      "outputPath": "D:\\BOTS\\GordonRamsayDiscordBot\\Gordon Ramsay Discord Bot\\GordonRamsayDiscordBot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IainN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1695,7 +1695,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -1745,7 +1746,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
