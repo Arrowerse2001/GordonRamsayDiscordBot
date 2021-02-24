@@ -152,16 +152,23 @@ namespace GordonRamsayBot.Commands
 
         // Reply to a message
         [Command("reply")]
-        [RequireOwner]
         public async Task Reply(ISocketMessageChannel channel, ulong msg, [Remainder] string reply)
         {
-            var client = Context.Client;
-            ulong channelID = channel.Id; // bot channel
-            var c = client.GetChannel(channelID) as SocketTextChannel;
+            SocketGuildUser cu = (SocketGuildUser)Context.User;
+            if (cu.GuildPermissions.ManageMessages == false)
+            {
+                await Context.Channel.SendMessageAsync($"I know you may be slightly stupid but you do not have permission to use this command!");
+            }
+            else
+            {
+                var client = Context.Client;
+                ulong channelID = channel.Id;
+                var c = client.GetChannel(channelID) as SocketTextChannel;
 
-            MessageReference m = new MessageReference(msg);
+                MessageReference m = new MessageReference(msg);
 
-            await c.SendMessageAsync(reply, false, null, null, null, m);
+                await c.SendMessageAsync(reply, false, null, null, null, m);
+            }
         }
 
         // Display server stats
@@ -183,14 +190,21 @@ namespace GordonRamsayBot.Commands
 
         // Say something to a specific channel
         [Command("say")]
-        [RequireOwner]
         public async Task SaySomething(ISocketMessageChannel channel, [Remainder] string msg)
         {
-            var client = Context.Client;
-            ulong channelID = channel.Id;
-            var c = client.GetChannel(channelID) as SocketTextChannel;
-            await c.SendMessageAsync($"{msg}");
-            await Context.Channel.SendMessageAsync($"Posted");
+            SocketGuildUser cu = (SocketGuildUser)Context.User;
+            if (cu.GuildPermissions.ManageMessages == false)
+            {
+                await Context.Channel.SendMessageAsync($"I know you may be slightly stupid but you do not have permission to use this command!");
+            }
+            else
+            {
+                var client = Context.Client;
+                ulong channelID = channel.Id;
+                var c = client.GetChannel(channelID) as SocketTextChannel;
+                await c.SendMessageAsync($"{msg}");
+                await Context.Channel.SendMessageAsync($"Posted");
+            }
         }
 
         // Mod Commands
