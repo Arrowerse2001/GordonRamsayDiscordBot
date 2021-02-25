@@ -5,8 +5,8 @@ namespace GordonRamsayDiscordBot.Handlers
     static class ImageHander
     {
         // Strings for the files
-        static readonly string MasterImage = @"imageMaster.txt";
-        static readonly string imageProgress = @"imageProgress.txt";
+        static readonly string MasterImage = @"C:\\Users\\Administrator\\Desktop\\imageMaster.txt";
+        static readonly string imageProgress = @"C:\\Users\\Administrator\\Desktop\\imageProgress.txt";
         static public List<string> ImageMasterList = new List<string>();
         static public List<string> images = new List<string>();
 

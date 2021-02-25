@@ -22,8 +22,8 @@ namespace GordonRamsayBot
         };
 
         // strings for files
-        static readonly string MasterPath = @"MasterList.txt";
-        static readonly string insultP = @"insultsProgress.txt";
+        static readonly string MasterPath = @"C:\\Users\\Administrator\\Desktop\\MasterList.txt";
+        static readonly string insultP = @"C:\\Users\\Administrator\\Desktop\\insultsProgress.txt";
         static public List<string> MasterList = new List<string>();
         static public List<string> gInsults = new List<string>();
 
